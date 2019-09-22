@@ -1,0 +1,179 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+ 
+body {
+  font: 100% sans-serif;
+  margin: 0em;
+  background-color: #fff;
+  color: #666;
+}
+
+h1, h2, h3 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+
+a {
+  color: #3d6dbe;
+  text-decoration: none;
+}
+
+a:focus,
+a:hover {
+  color: #6594e0;
+}
+
+p {
+  font-size: 1em;
+  line-height: 1.8;
+  margin-top: 0em;
+}
+
+img {
+  max-width: 100%;
+}
+
+hr {
+  border-top: 1px solid #ccc;
+  border-bottom: none;
+  margin-top: 3em;
+  margin-bottom: 2em;
+}
+
+header {
+  background-color: #999;
+  background-image: linear-gradient(to bottom right, #53f, #27ffc1);
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin-bottom: 4em;
+  text-align: center;
+  height: 500px;
+ 
+}
+
+header .search-container {
+  color: white;
+  font-size: 1em;
+  position: relative;
+  top: 250px;
+  margin: 0 auto;
+  width: 50%;
+}
+
+header h1 {
+  margin: 0;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+header input, header button {
+  font-size: 30px
+}
+
+section h1 {
+  font-size: 1.8em;
+  line-height: 1em;
+  margin-bottom: .6em;
+}
+
+/* Same font-size and line-height as p element */
+section ul li, section ol li {
+  font-size: 1em;
+  margin-left: -10px;
+  line-height: 1.8;
+}
+
+footer {
+  margin-bottom: 1em;
+  color: #888;
+}
+
+footer hr {
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+.center {
+  text-align: center;
+}
+
+@media screen and (min-width: 50em) {
+  header {
+    height: 700px;
+  }
+  
+  header h1 {
+    font-size: 3.2em;
+    top: 540px;
+  }
+  
+  header p {
+    top: 530px;
+    font-size: 1.5em;
+  }
+}
+
+
+/* ------------------- Grid -------------------*/
+
+.container {
+  max-width: 50em;
+  width:92%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.row {
+  clear: both;
+  margin-right: -1%;
+  margin-left:  -1%;
+  
+}
+
+.row:before,
+.row:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.row:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ */
+.row {
+  *zoom: 1;
+}
+
+.grid-1,
+.grid-1-5,
+.grid-2,
+.grid-3,
+.grid-4,
+.grid-5,
+.grid-6 {
+  float: left;
+  width:100%;
+  padding: 0 1%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 40em) {
+  .grid-1 { width: 16.6666666%; }
+  .grid-1-5 { width: 25%; }
+  .grid-2 { width: 33.3333333%; }
+  .grid-3 { width: 50%; }
+  .grid-4 { width: 66.6666666%; }
+  .grid-5 { width: 83.3333333%; }
+  .grid-6 { width: 100%; }
+
+}

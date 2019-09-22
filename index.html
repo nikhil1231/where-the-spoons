@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>WhereTheSpoons?</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+	<link href='http://fonts.googleapis.com/css?family=Lato:300,700' rel='stylesheet' type='text/css'>
+	<!-- stylesheets -->
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+	<!-- favicon -->
+	<link rel="shortcut icon" href="img/favicon.png">
+
+</head>
+
+<body>
+	<header>
+		<div class='search-container'>
+			<h1>WhereTheSpoons?</h1>
+			<div class="input-group mb-3">
+				<input id='session-id-input' type="text" class="form-control" placeholder="Sesh ID">
+				<div class="input-group-append">
+					<button id='go-button' class="btn btn-dark" type="button">Go</button>
+				</div>
+			</div>
+			<span id='error-msg'></span>
+		</div>
+	</header>
+	
+	<div class="container">
+
+
+
+		
+		<!--Footer-->
+		<footer class="center">
+			<hr>
+			<span>&copy; Nikhil Kunde 2019</span>
+		</footer>
+		
+	</div><!-- End Container -->
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-firestore.js"></script>
+	<script src='js/index.js'></script>
+</body>
+</html>
