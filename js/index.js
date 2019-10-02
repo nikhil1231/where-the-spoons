@@ -28,6 +28,8 @@ $(document).ready(() => {
 			const users = session.data();
 			if (users == undefined) {
 				searchError("Could not find sesh :(");
+			} else {
+				window.location.href = `/map.html?id=${sesh}`
 			}
 		}).catch(err => console.log(err));
 	})

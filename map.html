@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8" />
-	<title>WhereTheSpoons?</title>
+	<title>WhereTheSpoons? | Map</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
 	<link href='http://fonts.googleapis.com/css?family=Lato:300,700' rel='stylesheet' type='text/css'>
@@ -16,20 +16,37 @@
 </head>
 
 <body>
-	<header>
-		<div class='search-container'>
+	<header id='map'>
+		<!-- <div class='search-container'>
 			<h1>WhereTheSpoons?</h1>
 			<div class="input-group mb-3">
-				<input id='session-id-input' value='CqUw8riIX6YMPXNo0QS1' type="text" class="form-control" placeholder="Sesh ID">
+				<input id='session-id-input' type="text" class="form-control" placeholder="Sesh ID">
 				<div class="input-group-append">
 					<button id='go-button' class="btn btn-dark" type="button">Go</button>
 				</div>
 			</div>
 			<span id='error-msg'></span>
-		</div>
+		</div> -->
 	</header>
 	
 	<div class="container">
+
+		<ul class='sesh-users-list list-group'>
+			
+		</ul>
+
+		<form>
+			<div class="form-group">
+				<label for="name-input">Name</label>
+				<input type="text" class="form-control" id="name-input" placeholder="John Doe">
+			</div>
+			<span id='error-msg'></span>
+			<div class="form-group">
+				<label for="address-input">Address</label>
+				<input type="text" class="form-control" id="address-input" placeholder="69 Somewhere Lane, London">
+			</div>
+			<button type='button' class="add-user-btn btn btn-primary">Add</button>
+		</form>
 
 		<!--Footer-->
 		<footer class="center">
@@ -42,6 +59,8 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-app.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-firestore.js"></script>
-	<script src='js/index.js'></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBs9sc8OdSepiJP01h7-pgtxO4dj4YbHto&callback=initMap&libraries=places"
+    async defer></script>
+	<script src='js/map.js'></script>
 </body>
 </html>
